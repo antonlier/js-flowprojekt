@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+}
+
+h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 48px;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+#topNav {
+  background-color: beige;
+  position: fixed;
+
+  height: 10vh;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*Placering i flexbox*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*Styling af shadow*/
+  box-shadow: 0 1px 4px 0 #000;
+}
+
+.logo {
+  height: 50px;
+}
+
+.kurv .menu {
+  height: 15px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Styling af kurv overlay*/
+.cart-overlay {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 400px;
+  height: 400px;
+
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+
+  /* 👇 hidden state */
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.cart {
+  background: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  margin-top: 40px;
+
+  /* 👇 start above screen */
+  transform: translateY(-50px);
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+  opacity: 0;
+}
+
+.cart-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.cart-overlay.active .cart {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#footer-container img {
+  height: 100px;
+}
+
+#footer-container {
+  padding: 20px;
+  height: 200px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Styling af produktslideshow*/
+.img-slide {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  display: grid;
+  grid-template-areas: "slide";
+}
+.active {
+  transition: 0.5s ease;
+}
+.slide {
+  grid-area: slide;
+  position: relative;
+  transition: 0.5s ease;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  padding: 15px;
+  color: rgba(20, 20, 20, 0.8);
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+.next {
+  right: 0;
+}
+.prev:hover,
+.next:hover {
+  color: black;
+}
+.caption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: system-ui;
+  font-size: 0.8em;
+}
