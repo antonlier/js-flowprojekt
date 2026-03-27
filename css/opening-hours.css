@@ -1,78 +1,14 @@
 .opening-hours {
-  max-width: 500px;
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .opening-hours h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
+  padding-bottom: 24px;
 }
 
-.status-box {
-  background: #eef6ff;
-  border: 1px solid #cfe3ff;
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 20px;
-}
-
-.status-label {
-  margin: 0 0 6px 0;
-  font-weight: bold;
-}
-
-.status-text {
-  margin: 0;
-  font-size: 1.1rem;
-  font-weight: bold;
-  /* color: #1d4ed8; */
-}
-
-.hours-list {
+.opening-hours ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.day-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.day-row:last-child {
-  border-bottom: none;
-}
-
-.day {
-  font-weight: 600;
-}
-
-.time {
-  color: #555;
-}
-
-.closed-day .time {
-  color: #b91c1c;
-  font-weight: 600;
-}
-
-.today {
-  background: #f0fdf4;
-  border-radius: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.open {
-  color: #15803d;
-}
-
-.closed {
-  color: #b91c1c;
+  line-height: 1.4rem;
 }

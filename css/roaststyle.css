@@ -10,6 +10,10 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 body {
   background-color: #f7f7f7;
 }
@@ -112,55 +116,4 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*Styling af produktslideshow*/
-.img-slide {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  border-radius: 15px;
-  overflow: hidden;
-  display: grid;
-  grid-template-areas: "slide";
-}
-.active {
-  transition: 0.5s ease;
-}
-.slide {
-  grid-area: slide;
-  position: relative;
-  transition: 0.5s ease;
-}
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  margin-top: -24px;
-  padding: 15px;
-  color: rgba(20, 20, 20, 0.8);
-  font-size: 24px;
-  text-decoration: none;
-  transition: 0.5s ease;
-  z-index: 2;
-}
-.next {
-  right: 0;
-}
-.prev:hover,
-.next:hover {
-  color: black;
-}
-.caption {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  color: rgba(255, 255, 255, 0.8);
-  font-family: system-ui;
-  font-size: 0.8em;
 }

@@ -10,6 +10,8 @@
     <script async src="hero.js"></script>
     <script async src="products.js"></script>
     <script async src="script.js"></script>
+    <script async src="kvittering.js"></script>
+    <script async src="openinghours.js"></script>
   </head>
   <body>
     <header id="topNav">
@@ -25,6 +27,7 @@
         <h2>Populære produkter</h2>
         <div class="products"></div>
       </section>
+      <section class="opening-hours"></section>
     </main>
     <footer>
       <div id="footer-container">
@@ -38,9 +41,12 @@
     <!--Kurv overlay-->
     <div class="cart-overlay">
       <div class="cart">
-        <h2>Din kurv</h2>
+        <h2>Kurv</h2>
         <div class="cart-items"></div>
         <button class="close-cart">Luk</button>
+        <button class="place-order">Bestil</button>
+        <!-- klasse til print af kvittering gennem JS -->
+        <div class="receipt"></div>
       </div>
     </div>
   </body>
